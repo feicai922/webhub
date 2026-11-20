@@ -1,0 +1,23 @@
+# ── 构建工具链（几百 MB，绝不入库）────────────────────────────────
+.toolchain/
+
+# ── 构建产物 ──────────────────────────────────────────────────────
+dist/
+windows/bin/
+windows/obj/
+android/app/build/
+android/.gradle/
+android/local.properties
+*.deb
+
+# ── 从 shared/ 同步过去的副本（由 build.sh 生成）──────────────────
+android/app/src/main/assets/www/
+windows/www/
+
+# ── 系统 / 编辑器 ─────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+*.user
